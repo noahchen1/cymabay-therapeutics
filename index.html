@@ -53,10 +53,10 @@
             </div>
 
             <div class="right-column" id="right-column">
-                <ul class="btn-container">
+                <ul class="btn-container" id="btn-container">
                     <li><span class="btn-arrow"></span><button class="about-us" id="about-us">About us</button></li>
                     <li><span class="btn-arrow"></span><button class="EASL-btn" id="EASL-btn">EASL 2022 presentations</button></li>
-                    <li><button>What do you know about PBC? <br>Take this shorut quiz and we’ll
+                    <li><span class="btn-arrow"></span><button class="PBC-btn" id="PBC-btn">What do you know about PBC? <br>Take this shorut quiz and we’ll
                         donate $50 to patient advocacy.</button></li>
                     <li><span class="btn-arrow"></span><button class="clinical-trial-btn" id="clinical-trial-btn">Clinical trials</button></li>
                     <li><button>Request info</button></li>
@@ -105,6 +105,30 @@
                 </div>
             </div>
 
+            <form class="PBC-form hidden" id="PBC-form">
+                <div class="first-question" id="first-question">\
+                    <div class="question"></div>
+                    <div class="description"></div>
+                    <div class="options-container">
+                        <div>
+                            <input type="radio" id="PBC-foundation" name="first-question" value="PBC-foundation">
+                            <label for="PBC-foundation">PBC foundation</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="PBCers-Organization" name="first-question" value="PBCers-Organization">
+                            <label for="PBCers-Organization">PBCers Organization</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Canadian-PBC-Society" name="first-question" value="Canadian-PBC-Society">
+                            <label for="Canadian-PBC-Society">Canadian PBC Society</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="Hetz" name="first-question" value="Hetz">
+                            <label for="Hetz">Hetz-Israeli Association for the Health of the Livery</label>
+                        </div>
+                    </div>
+                </div>
+            </from>
             
         </div>
     </div>
