@@ -159,3 +159,17 @@
     width: 40%;
     height: 25vw;
 }
+
+/* PBC form */
+.PBC-form {
+    
+}
+
+.form-arrow {
+    background-image: url('./image/PBC-form/form-arrow.png');
+    background-size: contain;
+    background-color: white;
+    border: none;
+    width: 5vw;
+    height: 5vw;
+}
