@@ -1,7 +1,23 @@
+@font-face {
+    font-family: sf-pro;
+    src: url('./fonts/SF-Pro.ttf');
+}
+
+@font-face {
+    font-family: sf-pro-italic;
+    src: url('./fonts/SF-Pro-Italic.ttf');
+}
+
+@font-face {
+    font-family: zapfDingbats;
+    src: url('./fonts/ZapfDingbats.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sf-pro;
 }
 
 :root {
@@ -65,40 +81,47 @@
     width: 50vw;
 }
 
-.right-column {
-    position: relative;
-    background-image: url("./image/right-column-bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    height: var(--column-height);
-    max-height: 900px;
-    width: 30vw;
-    max-width: 680px;
-}
-
-.btn-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    top: 10vw;
-    right: 10vw;
-    height: var(--btn-container-height);
-}
-
-.btn-arrow {
-    background-image: url('./image/btn-arrow.png');
-    width: 20vw;
-    height: 20vw;
-}
-
 /* About us */
+.about-left-column {
+    position: relative;
+}
 .company-logo {
     background-image: url('./image/company-logo.png');
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 18vw;
+    height: 15vw;
+    margin-left: 3vw;
+}
+
+.about-us-text {
+    color: rgb(4,34,89);
+    font-size: calc(min(1.8vw, 1.5rem));
+    line-height: calc(min(3.5vw, 50px));
+    margin-left: 5vw;
+    letter-spacing: 0.05rem;
+}
+
+.learn-more-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-size: calc(min(1.8vw, 1.5rem));
+    bottom: 4vw;
+    margin-left: 5vw;
+}
+
+.learn-more-link {
+    color: rgba(255, 0, 0);
+}
+
+.learn-more-arrow {
+    background-image: url('./image/about/about-arrow.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: calc(min(2vw, 2rem));
+    width: calc(min(2vw, 2rem));
 }
 
 /* EASL Presentation */
@@ -172,4 +195,69 @@
     border: none;
     width: 5vw;
     height: 5vw;
+}
+
+/* Right Column Styling */
+.home-btn {
+    background-color: transparent;
+    color: white;
+    border-Style: none;
+    margin-top: 4vw;
+    margin-left: 3vw;
+    font-size: 1.5vw;
+}
+
+.right-column {
+    position: relative;
+    background-image: url("./image/right-column-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: var(--column-height);
+    max-height: 900px;
+    width: 30vw;
+    max-width: 680px;
+}
+
+.single-btn-container {
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    margin-top: calc(min(2vw, 15px));
+    margin-bottom: calc(min(2vw, 15px));
+}
+
+.right-column-btn {
+    cursor: pointer;
+    text-align: left;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5vw;
+    border: none;
+    margin-left: 2vw;
+    width: 20vw;
+}
+
+.PBC-form-btn-description {
+    font-size: 1vw;
+    margin-top: 0.5vw;
+}
+
+.btn-arrow {
+    background-image: url('./image/btn-arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 4vw;
+    height: 4vw;
+}
+
+.btn-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: calc(min(10vw, 150px));
+    margin-right: 3vw;
+    height: var(--btn-container-height);
+    width: auto;
 }

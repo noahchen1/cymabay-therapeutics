@@ -28,7 +28,7 @@
 
             <div class="about-left-column hidden" id="about-left-column">
                 <div class="company-logo"></div>
-                <p>
+                <p class="about-us-text">
                     <strong>
                         At CymaBay, we are committed to improving the<br>
                         lives of patients with liver and other chronic<br>
@@ -40,11 +40,15 @@
                         standards reflect our relentless dedication to the<br>
                         patients, families and communities we serve.
                 </p>
-                <a href="https://cymabay.com/" target="_blank">Learn More</a>
+                <div class="learn-more-container">
+                    <a  class="learn-more-link" href="https://cymabay.com/" target="_blank">Learn More</a>
+                    <div class="learn-more-arrow"></div>
+                </div>
             </div>
 
             <div class="EASL-presentations hidden" id="EASL-presentations">
                 <div class="company-logo"></div>
+                <div class="presentation-title">EASL 2022 Presentations</div>
                 <div class="EASL-presentation-container">
                     <div class="EASL-left"></div>
                     <div class="EASL-middle"></div>
@@ -99,9 +103,9 @@
                     <div class="donation" id="donation">
                         <div class="question">What do you know about PBC?</div>
                         <div class="description">Test your knowledge of primary
-                            biliary cholangitis (PBC) in this short interactive quiz, and weʼll
+                            biliary cholangitis (PBC) in this short interactive quiz, and we'll
                             donate $50 to patient advocacy.</div>
-                        <div>I’d like my donation to go to:</div>
+                        <div>I'd like my donation to go to:</div>
                         <div class="options-container">
                             <div>
                                 <input type="radio" id="PBC-foundation" name="donation" value="PBC-foundation">
@@ -158,7 +162,7 @@
                     <div class="second-question hidden" id="third-question">
                         <div class="question-header">QUESTION 2</div>
                         <div class="question">
-                            Following a complete workup, youʼve diagnosed a patient with PBC. According to the EASL guidelines, what should be your goals for treatment?</div>
+                            Following a complete workup, you've diagnosed a patient with PBC. According to the EASL guidelines, what should be your goals for treatment?</div>
                         <div class="options-container">
                             <div>
                                 <input type="radio" id="radio-btn" name="second-question" value="">
@@ -218,11 +222,11 @@
                         <div class="options-container">
                             <div>
                                 <input type="radio" id="radio-btn" name="forth-question" value="">
-                                <label for="radio-btn">a)	PPAR  α (alpha)</label>
+                                <label for="radio-btn">a)	PPAR  "a" (alpha)</label>
                             </div>
                             <div>
                                 <input type="radio" id="radio-btn" name="forth-question" value="">
-                                <label for="radio-btn">b)	PPAR  γ (gamma)</label>
+                                <label for="radio-btn">b)	PPAR  "y" (gamma)</label>
                             </div>
                             <div>
                                 <input type="radio" id="radio-btn" name="forth-question" value="">
@@ -389,20 +393,73 @@
                         <div>Institution/Country*</div>
                         <div><input></div>
                     </div>
+                    <div>
+                        <div>I'm looking for general information about CymaBay:</div>
+                        <div>
+                            <input type="radio" id="radio-btn" name="request-general-info" value="">
+                            <label for="radio-btn">Other</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="radio-btn" name="request-general-info" value="">
+                            <label for="radio-btn">The email list for latest press releases and earnings reports</label>
+                        </div>
+                        <button class="form-arrow hidden" type="button" id=""></button>
+                    </div>
+                    <div class="hidden" id="">
+                        <div>If Other, Please Specify:</div>
+                        <div><input></div>
+                        <button class="form-arrow hidden" type="button" id=""></button>
+                    </div>
+                    <div class="hidden" id="">
+                        <div class="">
+                            I have a medical information request: 
+                        </div>
+                        <div class="">
+                            <div>
+                                <input type="radio" id="radio-btn" name="" value="">
+                                <label for="">I have a patient who may be a good candidate for a clinical trial.</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radio-btn" name="" value="">
+                                <label for="">Other</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radio-btn" name="" value="">
+                                <label for="">I'd like to become a clinical trial site.</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="radio-btn" name="" value="">
+                                <label for="">Posters or journal articles.</label>
+                            </div>
+                        </div>
+                        <button class="form-arrow hidden" type="button" id=""></button>
+                    </div>
+                    <div>
+                        <div>If requesting Journals, Posters, or Other Medical Information, Please specify publication below:</div>
+                        <textarea></textarea>
+                        <button class="form-arrow hidden" type="button" id=""></button>
+                    </div>
                 </form>
+                <div class="hidden" id="">Thank you for your participation!</div>
             </div>
 
+            <!--Right Column Code below-->
             <div class="right-column" id="right-column">
+                <button class="home-btn" id="home-btn"><u>Home</u></button>
                 <ul class="btn-container" id="btn-container">
-                    <li><span class="btn-arrow"></span><button class="about-us" id="about-us">About us</button></li>
-                    <li><span class="btn-arrow"></span><button class="EASL-btn" id="EASL-btn">EASL 2022 presentations</button></li>
-                    <li><span class="btn-arrow"></span><button class="PBC-btn" id="PBC-btn">What do you know about PBC? <br>Take this shorut quiz and we’ll
-                        donate $50 to patient advocacy.</button></li>
-                    <li><span class="btn-arrow"></span><button class="clinical-trial-btn" id="clinical-trial-btn">Clinical trials</button></li>
-                    <li><span class="btn-arrow"></span><button class="request-info-btn" id="request-info-btn">Request info</button></li>
+                    <li class="single-btn-container"><div class="btn-arrow"></div><button class="about-us right-column-btn" id="about-us">About us</button></li>
+                    <li class="single-btn-container"><div class="btn-arrow"></div><button class="EASL-btn right-column-btn" id="EASL-btn">EASL 2022<br>presentations</button></li>
+                    <li class="single-btn-container">
+                        <div class="btn-arrow"></div>
+                        <button class="PBC-btn right-column-btn" id="PBC-btn">
+                            <p>What do you know about PBC?</p>
+                            <p class="PBC-form-btn-description">Take this shorut quiz and we'll donate $50 to patient advocacy.</p>
+                        </button>
+                    </li>
+                    <li class="single-btn-container"><div class="btn-arrow"></div><button class="clinical-trial-btn right-column-btn" id="clinical-trial-btn">Clinical trials</button></li>
+                    <li class="single-btn-container"><div class="btn-arrow"></div><button class="request-info-btn right-column-btn" id="request-info-btn">Request info</button></li>
                 </ul>
             </div>
-
             
         </div>
     </div>
