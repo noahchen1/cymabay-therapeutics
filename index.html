@@ -23,7 +23,7 @@
 
     <div class="main-container" id="main-container">
         <div class="form-container" id="form-container">
-
+            <button class="home-btn" id="home-btn"><u>Home</u></button>
             <div class="home-left-column" id="home-left-column"></div>
 
             <div class="about-left-column hidden" id="about-left-column">
@@ -48,7 +48,7 @@
 
             <div class="EASL-presentations hidden" id="EASL-presentations">
                 <div class="company-logo"></div>
-                <div class="presentation-title">EASL 2022 Presentations</div>
+                <div class="presentation-title"><strong>EASL 2022 Presentations</strong></div>
                 <div class="EASL-presentation-container">
                     <div class="EASL-left"></div>
                     <div class="EASL-middle"></div>
@@ -98,258 +98,257 @@
                 </div>
             </div>
 
+            <!--PBC Survey-->
             <div class="PBC-form-container hidden" id="PBC-form-container">
                 <form class="PBC-form" id="PBC-form">
-                    <div class="donation" id="donation">
-                        <div class="question">What do you know about PBC?</div>
+
+                    <div class="question-container donation" id="donation">
+                        <div class="question"><strong>What do you know about PBC?</strong></div>
                         <div class="description">Test your knowledge of primary
                             biliary cholangitis (PBC) in this short interactive quiz, and we'll
                             donate $50 to patient advocacy.</div>
-                        <div>I'd like my donation to go to:</div>
+                        <div class="form-options-header"><strong>I'd like my donation to go to:</strong></div>
                         <div class="options-container">
-                            <div>
-                                <input type="radio" id="PBC-foundation" name="donation" value="PBC-foundation">
-                                <label for="PBC-foundation">PBC foundation</label>
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="donation" value="PBC-foundation">
+                                <label for="radio-btn">PBC foundation</label>
                             </div>
-                            <div>
-                                <input type="radio" id="PBCers-Organization" name="donation" value="PBCers-Organization">
-                                <label for="PBCers-Organization">PBCers Organization</label>
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="donation" value="PBCers-Organization">
+                                <label for="radio-btn">PBCers Organization</label>
+                            </div class="radio-container">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="donation" value="Canadian-PBC-Society">
+                                <label for="radio-btn">Canadian PBC Society</label>
                             </div>
-                            <div>
-                                <input type="radio" id="Canadian-PBC-Society" name="donation" value="Canadian-PBC-Society">
-                                <label for="Canadian-PBC-Society">Canadian PBC Society</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="Hetz" name="donation" value="Hetz">
-                                <label for="Hetz">Hetz-Israeli Association for the Health of the Livery</label>
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="donation" value="Hetz">
+                                <label for="radio-btn">Hetz-Israeli Association for the Health of the Livery</label>
                             </div>
                         </div>
                     </div>
-                    <button class="form-arrow" type="button" id="donation-btn"></button>
 
-                    <div class="frist-question hidden" id="frist-question">
+                    <div class="question-container frist-question hidden" id="frist-question">
+                        <div class="company-logo"></div>
                         <div class="question-header">QUESTION 1</div>
-                        <div class="question">According to the EASL guidelines, which of the following is/are TRUE of primary biliary cholangitis (PBC)?</div>
+                        <div class="question"><strong>According to the EASL guidelines, which of the following is/are TRUE of primary biliary cholangitis (PBC)?</strong></div>
                         <div class="options-container">
-                            <div>
-                                <input type="radio" id="radio-btn" name="first-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn first-question-radio" id="radio-btn" name="first-question" value="">
                                 <label for="radio-btn">a)	It is an acute inflammatory cholestatic liver disease</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="first-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn first-question-radio" id="radio-btn" name="first-question" value="">
                                 <label for="radio-btn">b)	Autoimmunity is thought to be involved</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="first-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn first-question-radio" id="radio-btn" name="first-question" value="">
                                 <label for="radio-btn">c)	When untreated, it generally culminates in end-stage biliary cirrhosis</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="first-question" value="a and b">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn first-question-radio" id="radio-btn" name="first-question" value="a and b">
                                 <label for="radio-btn">d)	a and b</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="first-question" value="b and c">
-                                <label for="radio-btn">e)	b and c</label>
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn first-question-radio" id="radio-btn" name="first-question" value="b and c">
+                                <label for="radio-btn" id="frist-correct-label">e)	b and c</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="first-question" value="all of the above">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn first-question-radio" id="radio-btn" name="first-question" value="all of the above">
                                 <label for="radio-btn">f)	All of the above</label>
                             </div>
                         </div>
                     </div>
-                    <button class="form-arrow hidden" type="button" id="frist-question-btn"></button>
 
-                    <div class="second-question hidden" id="third-question">
+                    <div class="question-container second-question hidden" id="third-question">
+                        <div class="company-logo"></div>
                         <div class="question-header">QUESTION 2</div>
                         <div class="question">
-                            Following a complete workup, you've diagnosed a patient with PBC. According to the EASL guidelines, what should be your goals for treatment?</div>
+                            <strong>Following a complete workup, you've diagnosed a patient with PBC. According to the EASL guidelines, what should be your goals for treatment?</strong></div>
                         <div class="options-container">
-                            <div>
-                                <input type="radio" id="radio-btn" name="second-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn second-question-radio" id="radio-btn" name="second-question" value="">
                                 <label for="radio-btn">a)	Prevention of end-stage complications of liver disease</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="second-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn second-question-radio" id="radio-btn" name="second-question" value="">
                                 <label for="radio-btn">b)	Symptom management</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="second-question" value="">
-                                <label for="radio-btn">c)	When untreated, it generally culminates in end-stage biliary cirrhosis</label>
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn second-question-radio" id="radio-btn" name="second-question" value="a and b">
+                                <label for="radio-btn" id="second-correct-label">c)	a and b</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="second-question" value="a and b">
-                                <label for="radio-btn">d)	a and b</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="second-question" value="none of the above">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn second-question-radio" id="radio-btn" name="second-question" value="none of the above">
                                 <label for="radio-btn">d)	None of the above</label>
                             </div>
                         </div>
                     </div>
-                    <button class="form-arrow hidden" type="button" id="second-question-btn"></button>
 
-                    <div class="third-question hidden" id="third-question">
+                    <div class="question-container third-question hidden" id="third-question">
+                        <div class="company-logo"></div>
                         <div class="question-header">QUESTION 3</div>
                         <div class="question">
-                            Approximately what percentage of patients with PBC still experience disease progression despite UDCA treatment?
+                            <strong>Approximately what percentage of patients with PBC still experience disease progression despite UDCA treatment?</strong>
                         </div>
                         <div class="options-container">
-                            <div>
-                                <input type="radio" id="radio-btn" name="third-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn third-question-radio" id="radio-btn" name="third-question" value="">
                                 <label for="radio-btn">a)	Up to 15%</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="third-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn third-question-radio" id="radio-btn" name="third-question" value="">
                                 <label for="radio-btn">b)	Up to 25%</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="third-question" value="">
-                                <label for="radio-btn">c)	Up to 40%</label>
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn third-question-radio" id="radio-btn" name="third-question" value="">
+                                <label for="radio-btn" id="third-correct-label">c)	Up to 40%</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="third-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn third-question-radio" id="radio-btn" name="third-question" value="">
                                 <label for="radio-btn">d)	>50%</label>
                             </div>
                         </div>
                     </div>
-                    <button class="form-arrow hidden" type="button" id="third-question-btn"></button>
 
-                    <div class="forth-question hidden" id="forth-question">
+                    <div class="question-container forth-question hidden" id="forth-question">
+                        <div class="company-logo"></div>
                         <div class="question-header">QUESTION 4</div>
                         <div class="question">
-                            One therapy in development, seladelpar, belongs to which new class of drugs?
+                            <strong>One therapy in development, seladelpar, belongs to which new class of drugs?</strong>
                         </div>
                         <div class="options-container">
-                            <div>
-                                <input type="radio" id="radio-btn" name="forth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn forth-question-radio" id="radio-btn" name="forth-question" value="">
                                 <label for="radio-btn">a)	PPAR  "a" (alpha)</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="forth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn forth-question-radio" id="radio-btn" name="forth-question" value="">
                                 <label for="radio-btn">b)	PPAR  "y" (gamma)</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="forth-question" value="">
-                                <label for="radio-btn">c)	PPAR  δ (delta) or delpars</label>
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn forth-question-radio" id="radio-btn" name="forth-question" value="">
+                                <label for="radio-btn" id="forth-correct-label">c)	PPAR  δ (delta) or delpars</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="forth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn forth-question-radio" id="radio-btn" name="forth-question" value="">
                                 <label for="radio-btn">d)	Fibrates</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="forth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn forth-question-radio" id="radio-btn" name="forth-question" value="">
                                 <label for="radio-btn">e)	Glitazones</label>
                             </div>
                         </div>
                     </div>
-                    <button class="form-arrow hidden" type="button" id="forth-question-btn"></button>
 
-                    <div class="fifth-question hidden" id="fifth-question">
+                    <div class="question-container fifth-question hidden" id="fifth-question">
+                        <div class="company-logo"></div>
                         <div class="question-header">Please tell us a little about yourself and your practice.</div>
                         <div class="question">
-                            What do you feel is the biggest unmet need in PBC?
+                            <strong>What do you feel is the biggest unmet need in PBC?</strong>
                         </div>
                         <div class="options-container">
-                            <div>
-                                <input type="radio" id="radio-btn" name="fifth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="fifth-question" value="">
                                 <label for="radio-btn">a)	Improved biochemical response and normalization</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="fifth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="fifth-question" value="">
                                 <label for="radio-btn">b)	Improved treatments for symptomology (pruritus, fatigue)</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="fifth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio"  class="radio-btn" id="radio-btn" name="fifth-question" value="">
                                 <label for="radio-btn">c)	Demonstrated slowing of disease progression<br>(GLOBE score, liver stiffness)</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="fifth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio"  class="radio-btn" id="radio-btn" name="fifth-question" value="">
                                 <label for="radio-btn">d)	Better first-line therapy options</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="fifth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio"  class="radio-btn" id="radio-btn" name="fifth-question" value="">
                                 <label for="radio-btn">e)	One therapy that treats PBC biochemically</label>
                             </div>
                         </div>
                     </div>
-                    <button class="form-arrow hidden" type="button" id="fifth-question-btn"></button>
 
-                    <div class="sixth-question hidden" id="sixth-question">
+                    <div class="question-container sixth-question hidden" id="sixth-question">
+                        <div class="company-logo"></div>
                         <div class="question">
-                            How many PBC patients do you currently have in your practice?
+                            <strong>How many PBC patients do you currently have in your practice?</strong>
                         </div>
                         <div class="options-container">
-                            <div>
-                                <input type="radio" id="radio-btn" name="sixth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="sixth-question" value="">
                                 <label for="radio-btn">a)	None</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="sixth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="sixth-question" value="">
                                 <label for="radio-btn">b)	1-5</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="sixth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="sixth-question" value="">
                                 <label for="radio-btn">c)	6-10</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="sixth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="sixth-question" value="">
                                 <label for="radio-btn">d)	11-20</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="sixth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="sixth-question" value="">
                                 <label for="radio-btn">e)	>20</label>
                             </div>
                         </div>
                     </div>
-                    <button class="form-arrow hidden" type="button" id="sixth-question-btn"></button>
 
-                    <div class="seventh-question hidden" id="seventh-question">
+                    <div class="question-container seventh-question hidden" id="seventh-question">
+                        <div class="company-logo"></div>
                         <div class="question">
-                            What is the second-line PBC therapy of choice in your practice?
+                            <strong>What is the second-line PBC therapy of choice in your practice?</strong>
                         </div>
                         <div class="options-container">
-                            <div>
-                                <input type="radio" id="radio-btn" name="seventh-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="seventh-question" value="">
                                 <label for="radio-btn">a)	OCA</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="seventh-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="seventh-question" value="">
                                 <label for="radio-btn">b)	Fibrates</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="seventh-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="seventh-question" value="">
                                 <label for="radio-btn">c)	Neither of the above</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="seventh-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="seventh-question" value="">
                                 <label for="radio-btn">d)	Not sure</label>
                             </div>
                         </div>
                     </div>
-                    <button class="form-arrow hidden" type="button" id="seventh-question-btn"></button>
 
-                    <div class="eighth-question hidden" id="eighth-question">
+                    <div class="question-container eighth-question hidden" id="eighth-question">
+                        <div class="company-logo"></div>
                         <div class="question">
-                            Is this due to lack of access to OCA and fibrates in the country you practice in?
+                            <strong>Is this due to lack of access to OCA and fibrates in the country you practice in?</strong>
                         </div>
                         <div class="options-container">
-                            <div>
-                                <input type="radio" id="radio-btn" name="eighth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="eighth-question" value="">
                                 <label for="radio-btn">a)	Yes</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="eighth-question" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="eighth-question" value="">
                                 <label for="radio-btn">b)	No</label>
                             </div>
                         </div>
                     </div>
-                    <button class="form-arrow hidden" type="button" id="eighth-question-btn"></button>
 
-                    <div class="ninth-question hidden" id="ninth-question">
+                    <div class="question-container ninth-question hidden" id="ninth-question">
+                        <div class="company-logo"></div>
                         <div class="question">
-                            What Country do you practice in?
+                            <strong>What Country do you practice in?</strong>
                         </div>
-                        <select>
+                        <select class="pbc-select" id="pbc-select">
+                            <option value="" disabled selected hidden>Select</option>
                             <option>Belgium</option>
                             <option>Denmark</option>
                             <option>Finland</option>
@@ -368,11 +367,16 @@
                             <option>USA</option>
                             <option>Other</option>
                         </select>
-                        <button class="form-arrow hidden" type="button" id="ninth-question-btn"></button>
                     </div>
 
-                    <div class="thank-you-note hidden" id="thank-you-note">Thank you for your participation!</div>
+                    <button class="form-arrow-btn" type="button" id="form-arrow-btn"></button>
                 </form>
+                <div class="thank-you-note hidden" id="thank-you-note">Thank you for your participation!</div>
+            </div>
+
+            <div class="forward-backward-container hidden" id="forward-backward-container">
+                <button class="form-backward-btn" id="form-backward-btn"></button>
+                <button class="form-forward-btn" id="form-forward-btn" type="button"></button>
             </div>
 
             <div class="request-info-container hidden" id="request-info-container">
@@ -432,20 +436,17 @@
                                 <label for="">Posters or journal articles.</label>
                             </div>
                         </div>
-                        <button class="form-arrow hidden" type="button" id=""></button>
                     </div>
                     <div>
                         <div>If requesting Journals, Posters, or Other Medical Information, Please specify publication below:</div>
                         <textarea></textarea>
-                        <button class="form-arrow hidden" type="button" id=""></button>
                     </div>
+                    <div class="hidden" id=""><strong>Thank you for your participation!</strong></div>
                 </form>
-                <div class="hidden" id="">Thank you for your participation!</div>
             </div>
 
             <!--Right Column Code below-->
             <div class="right-column" id="right-column">
-                <button class="home-btn" id="home-btn"><u>Home</u></button>
                 <ul class="btn-container" id="btn-container">
                     <li class="single-btn-container"><div class="btn-arrow"></div><button class="about-us right-column-btn" id="about-us">About us</button></li>
                     <li class="single-btn-container"><div class="btn-arrow"></div><button class="EASL-btn right-column-btn" id="EASL-btn">EASL 2022<br>presentations</button></li>
@@ -459,6 +460,90 @@
                     <li class="single-btn-container"><div class="btn-arrow"></div><button class="clinical-trial-btn right-column-btn" id="clinical-trial-btn">Clinical trials</button></li>
                     <li class="single-btn-container"><div class="btn-arrow"></div><button class="request-info-btn right-column-btn" id="request-info-btn">Request info</button></li>
                 </ul>
+
+                <div class="first-correct-answer correct-answer hidden" id="first-correct-answer">
+                    <div>The correct answer is</div>
+                    <div><strong>e) b and c</strong></div>
+                    <div>
+                        PBC is a chronic (not acute)<br>
+                        inflammatory autoimmune<br>
+                        cholestatic liver disease, which<br>
+                        when untreated will culminate<br>
+                        in end-stage biliary cirrhosis.¹<br>
+                    </div>
+                    <div class="correct-asnwer-definition">
+                        1. European Association for the Study of the Liver. Electronic address:<br>
+                        easloffice@easloffice.eu; European Association for the Study of the Liver.<br>
+                        EASL Clinical Practice Guidelines: The diagnosis and management of<br>
+                        patients with primary biliary cholangitis. J Hepatol. 2017;67(1):145-172.<br>
+                        doi:10.1016/j.jhep.2017.03.022
+                    </div>
+                </div>
+
+                <div class="second-correct-answer correct-answer hidden" id="second-correct-answer">
+                    <div>The correct answer is</div>
+                    <div><strong>c) a and b</strong></div>
+                    <div>
+                        The goals of treatment and<br>
+                        management in PBC are the<br>
+                        prevention of end-stage liver<br>
+                        disease and the amelioration of<br>
+                        associated symptoms.¹<br>
+                    </div>
+                    <div class="correct-asnwer-definition">
+                        1. European Association for the Study of the Liver. Electronic address:<br>
+                        easloffice@easloffice.eu; European Association for the Study of the Liver.<br>
+                        EASL Clinical Practice Guidelines: The diagnosis and management of<br>
+                        patients with primary biliary cholangitis. J Hepatol. 2017;67(1):145-172.<br>
+                        doi:10.1016/j.jhep.2017.03.022
+                    </div>
+                </div>
+
+                
+                <div class="third-correct-answer correct-answer hidden" id="third-correct-answer">
+                    <div>The correct answer is</div>
+                    <div><strong>c) Up to 40%</strong></div>
+                    <div>
+                        Up to 40% of UDCA-treated<br>
+                        patients have an inadequate<br>
+                        biochemical response,<br>
+                        depending on the criteria used,<br>
+                        and such patients have<br>
+                        significantly worse transplant-free survival rates than UDCA responsive patients.¹¯⁴
+                    </div>
+                    <div class="correct-asnwer-definition">
+                        1. Corpechot C, Abenavoli L, Rabahi N, et al. Biochemical response to<br>
+                        ursodeoxycholic acid and long-term prognosis in primary biliary<br>
+                        cirrhosis. Hepatology. 2008;48(3):871-877.<br>
+                        2. Corpechot C, Chazouilleres O, Poupon R. Early primary biliary cirrhosis:<br>
+                        biochemical response to treatment and prediction of long-term outcome.<br>
+                        J Hepatol. 2011;55(6):1361-1367.<br>
+                        3. Kuiper EM, Hansen BE, de Vries RA, et al. Improved prognosis of<br>
+                        patients with primary biliary cirrhosis that have a biochemical response<br>
+                        to ursodeoxycholic acid. Gastroenterology. 2009;136(4):1281-1287.<br>
+                        4. Trivedi HD, Lizaola B, Tapper EB, Bonder A. Primary biliary cholangitis<br>
+                        new treatments for an old disease. Frontline Gastroenterol.<br>
+                        2017;8(1):29-36
+                    </div>
+                </div>
+
+                <div class="forth-correct-answer correct-answer hidden" id="forth-correct-answer">
+                    <div>The correct answer is</div>
+                    <div><strong>c) PPAR  δ (delta) or delpars</strong></div>
+                    <div>
+                        Seladelpar belongs to a new<br>
+                        class of drugs called delpars. It<br>
+                        is currently being studied in<br>
+                        multiple clinical trials for the<br>
+                        treatment of PBC.
+                    </div>
+                    <div class="correct-asnwer-definition">
+                        Seladelpar is an investigational drug that has not been approved for<br>
+                        use in any indication by the FDA, EMA, or other regulatory agencies.<br>
+                        Phase 3 clinical trials for seladelpar in primary biliary cholangitis<br>
+                        (PBC) are ongoing
+                    </div>
+                </div>
             </div>
             
         </div>
