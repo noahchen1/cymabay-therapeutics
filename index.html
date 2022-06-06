@@ -14,7 +14,10 @@
             Cymabay PBC Interactive
         </div>
         <button class="resume-btn" id="resume-btn">
-            Resume
+            <div class="resume-btn-content">
+                <div class="triangle"></div>
+                Resume
+            </div>
         </button>
         <button class="restart-btn" id="restart-btn">
             Restart
@@ -58,7 +61,7 @@
 
             <div class="clinical-trials hidden" id="clinical-trials">
                 <div class="company-logo"></div>
-                <div>Ongoing clinical trials</div>
+                <div class="clinical-trials-header"><strong>Ongoing clinical trials</strong></div>
                 <div class="clinical-text-box-container">
                     <div class="clinical-text-box">
                         <p>
@@ -92,8 +95,8 @@
                         about these trials? Have a
                         patient who may be
                         appropriate? <br>
-                        Talk with Medical Information or<br>
-                        <button>fill out this form.</button>
+                        Talk with Medical Information or
+                        <button id="clinical-footer-btn"><u>fill out this form.</u></button>
                     </p>
                 </div>
             </div>
@@ -370,10 +373,7 @@
                     </div>
 
                     <button class="form-arrow-btn" type="button" id="form-arrow-btn"></button>
-                    <div class="forward-backward-container hidden" id="forward-backward-container">
-                        <button class="form-backward-btn" id="form-backward-btn" type="button"></button>
-                        <button class="form-forward-btn" id="form-forward-btn" type="button"></button>
-                    </div>
+
                 </form>
                 <div class="thank-you-note hidden" id="thank-you-note">Thank you for your participation!</div>
             </div>
@@ -438,13 +438,9 @@
                     </div>
                     <div class="info-requested hidden">
                         <div>If requesting Journals, Posters, or Other Medical Information, Please specify publication below:</div>
-                        <textarea></textarea>
+                        <textarea class="info-requested-textarea"></textarea>
                     </div>
                     <button type="button" class="info-arrow-btn" id="info-arrow-btn"></button>
-                    <div class="info-forward-backward" id="info-forward-backward">
-                        <button class="info-backward-btn" id="info-backward-btn" type="button"></button>
-                        <button class="info-forward-btn" id="info-forward-btn" type="button"></button>
-                    </div>
                 </form>
                 <div class="info-thank-you hidden" id="info-thank-you"><strong>Thank you for your participation!</strong></div>
             </div>
@@ -495,11 +491,9 @@
                         associated symptoms.¹<br>
                     </div>
                     <div class="correct-asnwer-definition">
-                        1. European Association for the Study of the Liver. Electronic address:<br>
-                        easloffice@easloffice.eu; European Association for the Study of the Liver.<br>
-                        EASL Clinical Practice Guidelines: The diagnosis and management of<br>
-                        patients with primary biliary cholangitis. J Hepatol. 2017;67(1):145-172.<br>
-                        doi:10.1016/j.jhep.2017.03.022
+                        1. European Association for the Study of the Liver. EASL Clinical Practice <br>
+                        Guidelines: the diagnosis and management of patients with primary<br>
+                        biliary cholangitis. J Hepatol. 2017;67(1):145-172.
                     </div>
                 </div>
 
@@ -550,6 +544,15 @@
                 </div>
             </div>
             
+        </div>
+        <div class="forward-backward-container hidden" id="forward-backward-container">
+            <button class="form-backward-btn" id="form-backward-btn" type="button"></button>
+            <button class="form-forward-btn" id="form-forward-btn" type="button"></button>
+        </div>
+
+        <div class="info-forward-backward hidden" id="info-forward-backward">
+            <button class="info-backward-btn" id="info-backward-btn" type="button"></button>
+            <button class="info-forward-btn" id="info-forward-btn" type="button"></button>
         </div>
     </div>
 </body>

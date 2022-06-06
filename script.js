@@ -1,5 +1,6 @@
 const launchUI = document.getElementById('launch-UI')
 const resumeBtn = document.getElementById('resume-btn')
+const RESTART_BTN = document.getElementById('restart-btn')
 const aboutUsBtn = document.getElementById('about-us')
 const EASL_BTN = document.getElementById('EASL-btn')
 const CLINICAL_TRIALS_BTN = document.getElementById('clinical-trial-btn')
@@ -8,6 +9,7 @@ const DONATION_BTN = document.getElementById('donation-btn')
 const HOME_BTN = document.getElementById('home-btn')
 const PBC_ARROWS = document.getElementById('forward-backward-container')
 const REQUEST_INFO_BTN = document.getElementById('request-info-btn')
+const CLINICAL_FOOTER_BTN = document.getElementById('clinical-footer-btn')
 
 const HOME_LEFT_COLUMN = document.getElementById('home-left-column')
 const RIGHT_COLUMN = document.getElementById('right-column')
@@ -56,6 +58,10 @@ resumeBtn.addEventListener('click', e => {
     launchUI.style.display = 'none';
 })
 
+RESTART_BTN.addEventListener('click', e => {
+    launchUI.style.display = 'none';
+})
+
 HOME_BTN.addEventListener('click', e => {
     HOME_LEFT_COLUMN.classList.remove('hidden')
     RIGHT_COLUMN.classList.remove('hidden')
@@ -66,6 +72,8 @@ HOME_BTN.addEventListener('click', e => {
     PBC_FORM.classList.add('hidden')
     REQUEST_INFO_CONTAINER.classList.add('hidden')
     HOME_BTN.style.color = 'white'
+    PBC_ARROWS.classList.add('hidden')
+    INFO_ARROWS.classList.add('hidden')
 })
 
 // right column code
@@ -122,6 +130,20 @@ REQUEST_INFO_BTN.addEventListener('click', e => {
     BTN_CONTAINER.style.display = 'none'
     PBC_FORM.classList.add('hidden')
     REQUEST_INFO_CONTAINER.classList.remove('hidden')
+    HOME_BTN.style.color = 'white'
+    INFO_ARROWS.classList.remove('hidden')
+})
+
+CLINICAL_FOOTER_BTN.addEventListener('click', e => {
+    HOME_LEFT_COLUMN.classList.add('hidden')
+    ABOUT_LEFT_COLUMN.classList.add('hidden')
+    RIGHT_COLUMN.classList.remove('hidden')
+    EASL_PRESENTATION.classList.add('hidden')
+    CLINICAL_TRIALS.classList.add('hidden')
+    BTN_CONTAINER.style.display = 'none'
+    PBC_FORM.classList.add('hidden')
+    REQUEST_INFO_CONTAINER.classList.remove('hidden')
+    HOME_BTN.style.color = 'white'
 })
 
 
