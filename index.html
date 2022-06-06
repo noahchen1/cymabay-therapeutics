@@ -20,7 +20,7 @@
             Restart
         </button>
     </div>
-
+    
     <div class="main-container" id="main-container">
         <div class="form-container" id="form-container">
             <button class="home-btn" id="home-btn"><u>Home</u></button>
@@ -370,79 +370,83 @@
                     </div>
 
                     <button class="form-arrow-btn" type="button" id="form-arrow-btn"></button>
+                    <div class="forward-backward-container hidden" id="forward-backward-container">
+                        <button class="form-backward-btn" id="form-backward-btn" type="button"></button>
+                        <button class="form-forward-btn" id="form-forward-btn" type="button"></button>
+                    </div>
                 </form>
                 <div class="thank-you-note hidden" id="thank-you-note">Thank you for your participation!</div>
-            </div>
-
-            <div class="forward-backward-container hidden" id="forward-backward-container">
-                <button class="form-backward-btn" id="form-backward-btn"></button>
-                <button class="form-forward-btn" id="form-forward-btn" type="button"></button>
             </div>
 
             <div class="request-info-container hidden" id="request-info-container">
                 <div class="request-info-header"> 
                     <div class="company-logo"></div>
-                    <div>Information request</div>
+                    <div class="request-info-title"><strong>Information request</strong></div>
                 </div>
                 <form class="request-info-form">
-                    <div class="first-name-container" id="first-name-container">
+                    <div class="info-requested" id="first-name-container">
                         <div>First Name*</div>
-                        <div><input></div>
+                        <div><input class="request-info-input"></div>
                     </div>
-                    <div class="email-container hidden" id="email-container">
+                    <div class="info-requested hidden" id="email-container">
                         <div>Email Address*</div>
-                        <div><input></div>
+                        <div><input class="request-info-input"></div>
                     </div>
-                    <div class="country-container hidden" id="country-container">
+                    <div class="info-requested hidden" id="country-container">
                         <div>Institution/Country*</div>
-                        <div><input></div>
+                        <div><input class="request-info-input"></div>
                     </div>
-                    <div>
+                    <div class="info-requested hidden">
                         <div>I'm looking for general information about CymaBay:</div>
                         <div>
-                            <input type="radio" id="radio-btn" name="request-general-info" value="">
-                            <label for="radio-btn">Other</label>
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="request-general-info" value="">
+                                <label for="radio-btn">Other</label>
+                            </div>
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="request-general-info" value="">
+                                <label for="radio-btn">The email list for latest press releases and earnings reports</label>
+                            </div>
                         </div>
-                        <div>
-                            <input type="radio" id="radio-btn" name="request-general-info" value="">
-                            <label for="radio-btn">The email list for latest press releases and earnings reports</label>
-                        </div>
-                        <button class="form-arrow hidden" type="button" id=""></button>
                     </div>
-                    <div class="hidden" id="">
+                    <div class="info-requested hidden" id="">
                         <div>If Other, Please Specify:</div>
-                        <div><input></div>
-                        <button class="form-arrow hidden" type="button" id=""></button>
+                        <div><input class="request-info-input"></div>
                     </div>
-                    <div class="hidden" id="">
+                    <div class="info-requested hidden" id="">
                         <div class="">
                             I have a medical information request: 
                         </div>
                         <div class="">
-                            <div>
-                                <input type="radio" id="radio-btn" name="" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="" value="">
                                 <label for="">I have a patient who may be a good candidate for a clinical trial.</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="" value="">
                                 <label for="">Other</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="" value="">
                                 <label for="">I'd like to become a clinical trial site.</label>
                             </div>
-                            <div>
-                                <input type="radio" id="radio-btn" name="" value="">
+                            <div class="radio-container">
+                                <input type="radio" class="radio-btn" id="radio-btn" name="" value="">
                                 <label for="">Posters or journal articles.</label>
                             </div>
                         </div>
                     </div>
-                    <div>
+                    <div class="info-requested hidden">
                         <div>If requesting Journals, Posters, or Other Medical Information, Please specify publication below:</div>
                         <textarea></textarea>
                     </div>
-                    <div class="hidden" id=""><strong>Thank you for your participation!</strong></div>
+                    <button type="button" class="info-arrow-btn" id="info-arrow-btn"></button>
+                    <div class="info-forward-backward" id="info-forward-backward">
+                        <button class="info-backward-btn" id="info-backward-btn" type="button"></button>
+                        <button class="info-forward-btn" id="info-forward-btn" type="button"></button>
+                    </div>
                 </form>
+                <div class="info-thank-you hidden" id="info-thank-you"><strong>Thank you for your participation!</strong></div>
             </div>
 
             <!--Right Column Code below-->

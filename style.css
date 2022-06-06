@@ -20,10 +20,14 @@
     font-family: sf-pro;
 }
 
+body {
+    overflow: hidden;
+}
+
 :root {
     --form-container-width: 90vw;
     --column-height: 55vw;
-    --btn-container-height: 30vw;
+    --btn-container-height: 35vw;
     --EASL-presentation-height: 35vw;
 }
 
@@ -36,6 +40,7 @@
 .launch-UI {
     width: 100vw;
     height: 100vh;
+
     background-color: black;
     display: flex;
     justify-content: center;
@@ -183,6 +188,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     height: 10vw;
+    width: 20vw;
 }
 
 .about-us-text {
@@ -290,6 +296,7 @@
     height: var(--column-height);
     max-height: 900px;
     width: 60vw;
+    max-width: 1000px;
     color: rgb(4,34,89);
     font-size: calc(min(2vw, 2rem));
 }
@@ -367,8 +374,9 @@
 
 .forward-backward-container {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    width: 10vw;
+    top: 70vw;
+    left: 80vw;
 }
 
 .form-forward-btn {
@@ -384,6 +392,98 @@
 }
 
 .form-backward-btn {
+    background-image: url('./image/PBC-form/forward-arrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+    transform: rotatey(180deg);
+}
+
+/* request info styling */
+.request-info-container {
+    position: relative;
+    height: var(--column-height);
+    max-height: 900px;
+    width: 60vw;
+    max-width: 1000px;
+    color: rgb(4,34,89);
+    font-size: calc(min(2vw, 2rem));
+}
+
+.request-info-form {
+    width: 90%;
+}
+
+.request-info-header {
+    display: flex;
+    align-items: center;
+}
+
+.request-info-title {
+    margin-left: 10vw;
+}
+
+.info-requested {
+    margin-top: 3vw;
+    margin-left: 2vw;
+}
+
+.request-info-input {
+    width: 40vw;
+    margin-top: 2vw;
+    font-size: calc(min(2vw, 2rem));
+    outline: none;
+    border-color: rgb(4,34,89);
+    color: rgb(4,34,89);
+    border-width: 2px;
+}
+
+.info-arrow-btn {
+    position: absolute;
+    right: 4vw;
+    bottom: 5vw;
+    background-image: url('./image/PBC-form/form-arrow.png');
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    width: 5vw;
+    height: 5vw;
+}
+
+.info-thank-you {
+    color: rgb(4,34,89);
+    font-size: calc(min(3vw, 3rem));
+    position: absolute;
+    top: 20vw;
+    left: 5vw;
+}
+
+.info-forward-backward {
+    position: absolute;
+    width: 10vw;
+    top: 70vw;
+    left: 80vw;
+}
+
+.info-forward-btn {
+    background-image: url('./image/PBC-form/forward-arrow.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 4vw;
+    height: 4vw;
+}
+
+.info-backward-btn {
     background-image: url('./image/PBC-form/forward-arrow.png');
     background-position: center;
     background-repeat: no-repeat;
