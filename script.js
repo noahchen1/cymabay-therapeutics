@@ -80,6 +80,7 @@ HOME_BTN.addEventListener("click", (e) => {
   HOME_BTN.style.color = "white";
   PBC_ARROWS.classList.add("hidden");
   INFO_ARROWS.classList.add("hidden");
+  CORRECT_ANSWERS.forEach(answer => answer.classList.add('hidden'));
 });
 
 

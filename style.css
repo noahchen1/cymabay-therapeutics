@@ -180,9 +180,9 @@ body {
 .correct-answer {
     position: relative;
     font-size: calc(min(1.5vw, 1.5rem));
-    height: calc(min(46vw, 725px));
+    height: calc(min(45vw, 725px));
     width: calc(min(25vw, 400px));
-    margin-top: calc(min(10vw, 80px));
+    margin-top: calc(min(10vw, 150px));
     margin-left: calc(min(2vw, 50px));
     color: white;
 }
