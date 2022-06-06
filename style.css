@@ -35,8 +35,6 @@ body {
     display: none;
 }
 
-/* launch UI styling */
-
 .launch-UI {
     width: 100vw;
     height: 100vh;
@@ -63,8 +61,8 @@ body {
 }
 
 .triangle {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 15px solid rgba(0, 0, 0, 0.5);
@@ -199,7 +197,6 @@ body {
     font-size: calc(min(0.8vw, 0.8rem));
 }
 
-/* home page style */
 .home-left-column {
     background-image: url("./image/home-page-left-column.png");
     background-size: contain;
@@ -209,7 +206,6 @@ body {
     width: 50vw;
 }
 
-/* About us */
 .about-left-column {
     position: relative;
 }
@@ -224,7 +220,7 @@ body {
 }
 
 .about-us-text {
-    color: rgb(4,34,89);
+    color: rgb(4, 34, 89);
     font-size: calc(min(1.8vw, 1.5rem));
     line-height: calc(min(3.5vw, 50px));
     margin-left: 5vw;
@@ -253,11 +249,10 @@ body {
     width: calc(min(2vw, 2rem));
 }
 
-/* EASL Presentation */
 .EASL-presentations {
     width: 90vw;
     height: var(--column-height);
-    color:rgb(4,34,89);
+    color: rgb(4, 34, 89);
 }
 
 
@@ -270,7 +265,7 @@ body {
     max-height: 600px;
 }
 
-.presentation-title{
+.presentation-title {
     font-size: calc(min(2vw, 2rem));
     margin-left: 2vw;
 }
@@ -306,11 +301,10 @@ body {
     width: calc(var(--form-container-width) / 3);
 }
 
-/* clinical trial */
 .clinical-trials {
     width: var(--form-container-width);
     height: var(--column-height);
-    color:rgb(4,34,89);
+    color: rgb(4, 34, 89);
     font-size: calc(min(2vw, 2rem));
 }
 
@@ -354,17 +348,17 @@ body {
     color: inherit;
 }
 
-/* PBC form */
 .PBC-form-container {
     position: relative;
 }
+
 .PBC-form {
     position: relative;
     height: var(--column-height);
     max-height: 900px;
     width: 60vw;
     max-width: 1000px;
-    color: rgb(4,34,89);
+    color: rgb(4, 34, 89);
     font-size: calc(min(2vw, 2rem));
 }
 
@@ -432,7 +426,7 @@ body {
 }
 
 .thank-you-note {
-    color: rgb(4,34,89);
+    color: rgb(4, 34, 89);
     font-size: calc(min(3vw, 3rem));
     position: absolute;
     top: 20vw;
@@ -472,14 +466,13 @@ body {
     transform: rotatey(180deg);
 }
 
-/* request info styling */
 .request-info-container {
     position: relative;
     height: var(--column-height);
     max-height: 900px;
     width: 60vw;
     max-width: 1000px;
-    color: rgb(4,34,89);
+    color: rgb(4, 34, 89);
     font-size: calc(min(2vw, 2rem));
 }
 
@@ -504,7 +497,7 @@ body {
 .info-requested-textarea {
     width: 45vw;
     height: 20vw;
-    border-color: rgb(4,34,89);
+    border-color: rgb(4, 34, 89);
     margin-top: 2vw;
     font-size: inherit;
     outline: none;
@@ -515,8 +508,8 @@ body {
     margin-top: 2vw;
     font-size: calc(min(2vw, 2rem));
     outline: none;
-    border-color: rgb(4,34,89);
-    color: rgb(4,34,89);
+    border-color: rgb(4, 34, 89);
+    color: rgb(4, 34, 89);
     border-width: 2px;
 }
 
@@ -534,7 +527,7 @@ body {
 }
 
 .info-thank-you {
-    color: rgb(4,34,89);
+    color: rgb(4, 34, 89);
     font-size: calc(min(3vw, 3rem));
     position: absolute;
     top: 20vw;
@@ -573,4 +566,3 @@ body {
     height: 4vw;
     transform: rotatey(180deg);
 }
-
